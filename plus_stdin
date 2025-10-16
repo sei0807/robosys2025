@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 import sys
-
-ans = 0.0                    #xを定義して初期化                                            
-for line in sys.stdin:#スライスを使う
-    ans += float(line)
+ans = 0  #もともと0.0だったのを0に変更
+for line in sys.stdin:
+    try:
+        ans += int(line)   #intは文字列を整数に（失敗すると例外発生）            
+    except:
+        ans += float(line)
 print(ans)
