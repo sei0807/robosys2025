@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import sys
+
+ans = 0.0                    #xを定義して初期化                                            
+for line in sys.stdin:#スライスを使う
+    ans += float(line)
+print(ans)
