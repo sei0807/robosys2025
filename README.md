@@ -1,8 +1,8 @@
-# plus
-[![test]](https://github.com/sei0807/robosys2025/actions/workflows/test.yml/badge.svg)
+# plusコマンド
+![test](https://github.com/sei0807/robosys2025/actions/workflows/test.yml/badge.svg)
 
 標準入力から読み込んだ数字を足す。
-# robosys2025
+
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このパッケージは，robosys_2025由来のコード（© 2025 Ryuichi Ueda）を利用しています
