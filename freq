@@ -1,19 +1,27 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2025 Seiya Ohata
 # SPDX-License-Identifier: BSD-3-Clause
+
 import sys
 
+def main():
+    counts = {}
 
-def tonum(s):   
-    try:
-        return int(s)
-    except:
-        return float(s)
+    # 標準入力から全行読み込む
+    lines = sys.stdin.readlines()
 
+    for line in lines:
+        # 空白で単語に分割する
+        words = line.split()
+        for w in words:
+            if w in counts:
+                counts[w] += 1
+            else:
+                counts[w] = 1
 
-ans = 0
-for line in sys.stdin:
-    line = line.rstrip()
-    ans += tonum(line)
+    # キー（単語）でソートして出力
+    for w, c in sorted(counts.items()):
+        print(f"{w} {c}")
 
-print(ans)
+if __name__ == '__main__':
+    main()
