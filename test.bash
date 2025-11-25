@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2025 Seiya Ohata 　　　　　
+# SPDX-FileCopyrightText: 2025 Seiya Ohata
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
@@ -9,8 +9,14 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng "$LINENO"
+out=$(echo "Dog Cat Dog" | ./freq)
+ans="Cat 1
+Dog 2"
+[ "${out}" = "${ans}" ] || ng "$LINENO"
+
+out=$(echo | ./freq)
+[ "$?" = 0 ]      || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res
