@@ -1,7 +1,14 @@
-# plusコマンド
+# freqコマンド
 ![test](https://github.com/sei0807/robosys2025/actions/workflows/test.yml/badge.svg)
 
-標準入力から読み込んだ数字を足す。
+標準入力から読み込んだ単語の頻度を数えるコマンド。
+
+## 実行例
+
+```bash
+$ echo "Dog Cat Dog" | ./freq
+Cat 1
+Dog 2
 
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
