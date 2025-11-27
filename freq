@@ -18,7 +18,7 @@ def main():
                 counts[w] = 1
 
 
-    for w, c in sorted(counts.items()):
+    for w, c in sorted(counts.items(), key=lambda x: (-x[1], x[0])):
         print(f"{w} {c}")
 
 if __name__ == '__main__':
