@@ -9,7 +9,6 @@ def main():
     
     lines = sys.stdin.readlines()
 
-
     for line in lines:
         words = line.split()
         for w in words:
@@ -17,6 +16,7 @@ def main():
                 counts[w] += 1
             else:
                 counts[w] = 1
+
 
     for w, c in sorted(counts.items()):
         print(f"{w} {c}")
