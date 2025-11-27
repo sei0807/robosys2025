@@ -18,5 +18,8 @@ out=$(echo | ./freq)
 [ "$?" = 0 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+./freq < . > /dev/null 2>&1
+[ "$?" -ne 0 ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit $res
