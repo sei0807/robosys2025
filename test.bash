@@ -18,6 +18,12 @@ out=$(echo | ./freq)
 [ "$?" = 0 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+out=$(echo "B A C" | ./freq)
+ans="A 1
+B 1
+C 1"
+
+[ "${out}" = "${ans}" ] || ng "$LINENO"
 ./freq < . > /dev/null 2>&1
 [ "$?" -ne 0 ] || ng "$LINENO"
 
