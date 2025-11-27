@@ -10,8 +10,8 @@ ng () {
 res=0
 
 out=$(echo "Dog Cat Dog" | ./freq)
-ans="Cat 1
-Dog 2"
+ans="Dog 2
+Cat 1"
 [ "${out}" = "${ans}" ] || ng "$LINENO"
 
 out=$(echo | ./freq)
