@@ -9,7 +9,7 @@
 このリポジトリをクローンし、ディレクトリに移動します。
 
 ```bash
-$git clone [https://github.com/sei0807/robosys2025.git$](https://github.com/sei0807/robosys2025.git$) 
+$git clone https://github.com/sei0807/robosys2025.git
 ```
 ```
 cd robosys2025
@@ -28,6 +28,7 @@ $ chmod +x freq
 ```bash
 $ echo "Dog Cat Dog" | ./freq
 ```
+結果
 ```
 Dog 2
 Cat 1
@@ -51,6 +52,7 @@ banana
 apple
 ```
 (ここで Ctrl+D を押す)
+結果
 ```
 apple 2
 banana 1
@@ -80,6 +82,6 @@ OK
 - © 2025 Seiya Ohata
 
 ## 謝辞
-このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
+このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、参考にしています。
 [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp)
 
