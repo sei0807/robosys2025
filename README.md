@@ -52,6 +52,7 @@ banana
 apple
 ```
 (ここで Ctrl+D を押す)
+
 結果
 ```
 apple 2
@@ -77,11 +78,10 @@ OK
 - Ubuntu 22.04.5 LTS
 
 ## ライセンス
-- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布お
-よび使用が許可されます．
+- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
 - © 2025 Seiya Ohata
 
 ## 謝辞
-このパッケージのコードは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、参考にしています。
+このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、参考にしています。
 [ryuichiueda/slides_marp/robosys2025](https://github.com/ryuichiueda/slides_marp)
 
