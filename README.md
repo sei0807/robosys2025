@@ -5,56 +5,38 @@
 
 ## 使用方法
 
-### 0.インストール
+### 1. インストール
 このリポジトリをクローンし、ディレクトリに移動します。
-
+必要に応じて実行権限を与えてください。
 ```bash
-$git clone https://github.com/sei0807/robosys2025.git
-```
-```
-cd robosys2025
-```
-インストール時の注意
-スクリプトに実行権限がない場合は、以下のコマンドを実行してくださ
-い。
-
-```bash
-$ chmod +x freq
+$git clone https://github.com/sei0807/robosys2025.git 
+$cd robosys2025
+$chmod +x freq
 ```
 
-### 1.文字列を直接渡す
+### 2. 文字列を直接渡す
 `echo` コマンドを使って、集計したい文字を直接渡すことができます。
 
 ```bash
 $ echo "Dog Cat Dog" | ./freq
-```
-結果
-```
 Dog 2
 Cat 1
 ```
 
-### 2.ファイルの内容を集計する
+### 3. ファイルの内容を集計する
 `cat` コマンドと組み合わせることで、テキストファイル内の単語数を数えることができます。
 
 ```bash
 $ cat sample.txt | ./freq
 ```
-### 3.手動で集計する
+### 4. 手動で集計する
 コマンドを実行した後入力待ち状態になります。集計したい単語の入力が終わったら`Ctrl+D `を押すと、集計結果が表示されます。
 
 ```bash
 $ ./freq
-```
-```
 apple
 banana
 apple
-```
-(ここで Ctrl+D を押す)
-
-結果
-```
 apple 2
 banana 1
 ```
@@ -65,8 +47,7 @@ banana 1
 
 ```bash
 $ ./test.bash
-```
-```
+
 OK
 ```
 
